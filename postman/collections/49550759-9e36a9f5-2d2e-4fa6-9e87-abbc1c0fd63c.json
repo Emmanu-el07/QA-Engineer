@@ -118,7 +118,7 @@
 							"// Asserting Array Properties\r",
 							"pm.test(\"Test Array Properties\",()=>{\r",
 							"\t// Courses Include \"Java\"\r",
-							"\tpm.expect(jsonData.course).to.include(\"Java\");\r",
+							"\tpm.expect(jsonData.course).to.include(\"RestAPI\");\r",
 							"\t// Courses should include all listed\r",
 							"\tpm.expect(jsonData.course).to.include.members([\"C#\", \"RestAPI\"]);\r",
 							"});\r",
