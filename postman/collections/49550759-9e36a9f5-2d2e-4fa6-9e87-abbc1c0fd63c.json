@@ -111,7 +111,7 @@
 							"pm.test(\"Test Data Type of response\", ()=>{\r",
 							"\tpm.expect(jsonData).to.be.an('object');\r",
 							"\tpm.expect(jsonData.name).to.be.a('string');\r",
-							"\tpm.expect(jsonData.id).to.be.a('number');\r",
+							"\tpm.expect(jsonData.id).to.be.a('string');\r",
 							"\tpm.expect(jsonData.courses).to.be.an(\"array\");\r",
 							"});\r",
 							"\r",
