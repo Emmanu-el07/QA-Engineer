@@ -77,7 +77,7 @@
 							"\r",
 							"// Validate for String type Status Code\r",
 							"pm.test(\"Status code is a string\", () => {\r",
-							"\tpm.response.to.have.status(\"OK\");\r",
+							"\tpm.response.to.have.status(\"Created\");\r",
 							"});"
 						],
 						"type": "text/javascript",
