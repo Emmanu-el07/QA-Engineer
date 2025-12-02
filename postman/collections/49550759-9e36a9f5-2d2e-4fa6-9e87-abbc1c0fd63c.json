@@ -87,7 +87,7 @@
 							"\r",
 							"// Test for response header having a specific response\r",
 							"pm.test(\"Content-Type header is application/json\",() => {\r",
-							"\tpm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json; charset=utf-8');\r",
+							"\tpm.expect(pm.response.headers.get('Content-Type')).to.eql('application/json');\r",
 							"});\r",
 							"\r",
 							"\r",
