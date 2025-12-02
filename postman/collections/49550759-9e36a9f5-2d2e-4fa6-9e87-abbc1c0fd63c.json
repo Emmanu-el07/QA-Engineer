@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "49550759-9e36a9f5-2d2e-4fa6-9e87-abbc1c0fd63c",
+		"name": "OluwatobiAPI Manual Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Request (All Students Details)",
+			"id": "49550759-2a8026fa-b810-4ea6-a4ab-c739630aeb6e",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Request",
+			"id": "49550759-e229c03e-75e6-4aba-938b-830b3ad3471a",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Eden\",\r\n    \"location\":\"Nigeria\",\r\n    \"phone\":\"7010381670\",\r\n    \"course\":[\r\n        \"R\",\"Java\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Request (Specific Students)",
+			"id": "49550759-1984e903-8720-4df3-a65d-6c7051bb39f9",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/students/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Request",
+			"id": "49550759-aa16c9a1-8f70-469c-85b3-2e61adf03ced",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Eden\",\r\n    \"location\": \"France\",\r\n    \"phone\": \"7010381670\",\r\n    \"course\": [\r\n        \"R\",\r\n        \"Java\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/students/7864",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"7864"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Request",
+			"id": "49550759-86a7f240-f9dc-440f-9d2b-9a43fb33c697",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/students/ca18",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"students",
+						"ca18"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
