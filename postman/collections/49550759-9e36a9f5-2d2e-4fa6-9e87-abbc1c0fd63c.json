@@ -101,7 +101,7 @@
 							"// });\r",
 							"\r",
 							"\r",
-							"// Response time to be below 200ms\r",
+							"// Response time to be below 10ms\r",
 							"pm.test(\"Response time is less than 10ms\", ()=>{\r",
 							"\tpm.expect(pm.response.responseTime).to.be.below(10)\r",
 							"});\r",
