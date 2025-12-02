@@ -59,6 +59,28 @@
 		},
 		{
 			"name": "Get Request (Specific Students)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cfc39476-befa-4984-9c1a-7ffef5de0da5",
+						"exec": [
+							"// Validate the Status Code\r",
+							"pm.test(\"Status Code is 200\",()=>{\r",
+							"\tpm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Validate for Multiple response Code\r",
+							"pm.test(\"Successful GET request\",()=>{\r",
+							"\tpm.expect(pm.response.code).to.be.oneOf([200,201]);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"id": "49550759-1984e903-8720-4df3-a65d-6c7051bb39f9",
 			"request": {
 				"auth": {
