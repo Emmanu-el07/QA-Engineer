@@ -73,6 +73,11 @@
 							"// Validate for Multiple response Code\r",
 							"pm.test(\"Successful GET request\",()=>{\r",
 							"\tpm.expect(pm.response.code).to.be.oneOf([200,201]);\r",
+							"});\r",
+							"\r",
+							"// Validate for String type Status Code\r",
+							"pm.test(\"Status code is a string\", () => {\r",
+							"\tpm.response.to.have.status(\"OK\");\r",
 							"});"
 						],
 						"type": "text/javascript",
